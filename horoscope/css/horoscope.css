@@ -1,0 +1,35 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    text-align: center;
+    display: flex;
+    background-color: teal;
+    flex-direction: column;
+    margin-bottom: 120px;
+}
+
+div{
+    flex: 1;
+    flex-grow: 2;
+}
+
+form{
+    flex:1;
+    justify-content: center;
+}
+
+h1{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+footer{
+    background-color: brown;
+    flex: 1;
+    position: fixed; 
+    width: 100%;
+    bottom: 0%;
+    left: 0;
+    /* height: 70px; */
+}

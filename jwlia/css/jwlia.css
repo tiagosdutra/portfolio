@@ -1,0 +1,175 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    padding: 5px 10px;
+}
+div{
+    padding: 1.25%;
+}
+ .thirdrow img, .fourthrow img{
+     padding: 1.25%;
+ }
+.main{
+    display: flex;
+    flex-direction: column;
+}
+
+footer{
+    padding: 0 25px;
+    background-color: #8f9ca3;
+}
+nav{
+    display: flex;
+}
+
+.navbarlink{
+    justify-content: space-evenly;
+    text-align: center;
+    flex: 1;
+    text-decoration: none;
+    color: #202020;
+}
+
+.row{
+    flex: 1;
+    padding: 25px;
+    display: flex;
+}
+
+.row:nth-child(odd){
+    background-color: lightgray;
+}
+
+button.navbarlink{
+    background-color: darkslategray;
+    color: white;
+    appearance: none;
+    border: none;
+}
+
+.media{
+    display: flex;
+}
+
+.medialink{
+    padding: 10px;
+}
+
+.copyright{
+    flex-grow: 1;
+}
+
+.directory{
+    display: flex;
+    flex-direction: row;
+}
+
+.directdiv{
+    flex:1;
+}
+
+li{
+    list-style: none;
+}
+
+
+ul > li:first-child{
+    font-weight: bold;
+}
+
+.row:nth-child(1) > div{
+    text-align: center;
+    padding: 5%;
+    flex: 1;
+}
+
+.row:nth-child(1) > div:nth-child(1){
+    padding:10%;
+}
+
+.row:nth-child(2){
+    flex-direction: column;
+    text-align: center;
+}
+
+.secondrow{
+    display: flex;
+    text-align: center;
+    flex: 1;
+}
+
+.secondrow > div{
+    flex: 1;
+}
+
+.thirdrow{
+    flex: 1;
+}
+
+.thirdrow:nth-child(1){
+    flex-grow: 2;
+}
+
+.thirdrow:nth-child(2){
+    text-align: center;
+}
+
+.row:nth-child(4){
+    flex-direction: column;
+    text-align: center;
+}
+
+.row:nth-child(4) > div:nth-child(2){
+    text-align: left;
+}
+.fourthrow{
+    flex-grow: 1;
+}
+
+.fourthrow:nth-child(2){
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    padding: 0% 5%;
+}
+
+.fourthrow:nth-child(3){
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.fourthrow:nth-child(3) > div{
+    flex:1;
+}
+
+@media all and (min-width:1200px){
+    body{
+        margin: 0 12.5%;
+    }
+}
+
+@media all and (max-width:1199px){
+    body{
+        margin: 0 5%;
+    }
+
+    .main > .row:nth-child(1) > div:nth-child(2){
+        display: none;
+    }
+}
+
+
+@media all and (max-width:800px){
+
+
+
+    .row:nth-child(4){
+        display: none;
+    }
+}
